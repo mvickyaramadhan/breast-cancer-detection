@@ -1,0 +1,44 @@
+(base) conda create --name base-dl-3
+
+To activate this environment, use
+#
+#     $ conda activate base-dl-3
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+env (base-dl-3) hpc@hpc:~/Documents/research-nona/baseline/single-shot-face-anti-spoofing/awesome_face_antispoofing
+
+$ conda install -c anaconda pip
+$ python -V
+Python 3.8.5
+
+$ sh install_requirements_no_pytorch.sh
+
+
+$ conda install pytorch torchvision cudatoolkit=9.2 -c pytorch
+
+$ conda install pillow
+
+$ conda install git
+
+$ pip install git+https://github.com/pytorch/tnt.git@master
+
+$ pip install torchsummary
+
+$ pip install fire
+
+$ pip install sklearn
+
+$ conda install -c condaforge opencv
+
+$ conda install -c conda-forge tqdm
+
+$ conda install -c conda-forge matplotlib
+
+$ pip install efficientnet_pytorch
+
+$ sudo rm -R EfficientNet-PyTorch/
+
+$ sh training_timer.sh  #train
